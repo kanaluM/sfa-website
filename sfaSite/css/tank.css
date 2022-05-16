@@ -1,0 +1,185 @@
+body{
+    background-color:#f7c2be;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+    }
+
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 8px;
+    width: 80px;
+    height: 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    }
+    
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+#threeTypes > li{
+    margin-right: 50px;
+    padding:5px;
+    zoom:1;
+    display:inline-block;
+}
+
+#userInput{
+    margin-top: 20px;
+    background-color:green;
+    position: relative;
+    height: 440px;
+    width: 900px;
+    padding: 20px;
+}
+
+#UIdistributions{
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    background-color:white;
+    outline-style: solid;
+    outline-color: black;
+}
+
+#UIText{
+    background-color: blue;  
+    color: coral;  
+    outline-style: solid;
+    outline-color: black;
+    padding: 20px;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    left: 480px;
+    word-wrap: break-word;
+}
+
+#UIbutton{
+    position: absolute;
+    right: 210px;
+    bottom: 20px;
+    width: 180px;
+    height: 50px;
+}
+
+#UIbutton2{
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+    width: 100px;
+    height: 50px;
+}
+
+#exDist{
+    margin-top: 20px;
+    background-color:green;
+    position: relative;
+    height: 440px;
+    width: 900px;
+    padding: 20px;
+}
+
+#distributions{
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    background-color:white;
+    outline-style: solid;
+    outline-color: black;
+}
+
+#exText{
+    background-color: blue;  
+    color: coral;  
+    outline-style: solid;
+    outline-color: black;
+    padding: 20px;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    left: 480px;
+    word-wrap: break-word;
+}
+
+#testB{
+    position: absolute;
+    right: 50px;
+    bottom: 60px;
+    width: 340px;
+    height: 50px;
+}
+
+#testB:hover {
+    transition-duration: 0.4s;
+    background-color: white; /* Green */
+    color:black;
+    }
+
+#buildurown{
+    margin-top: 20px;
+    background-color:green;
+    position: relative;
+    height: 440px;
+    width: 900px;
+    padding: 20px;
+}
+
+#byoText{
+    background-color: blue;  
+    color: coral;  
+    outline-style: solid;
+    outline-color: black;
+    padding: 20px;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    left: 480px;
+    word-wrap: break-word;
+}
+
+#inputFB{
+    position: absolute;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+}
+
+#inputFB:hover {
+    transition-duration: 0.4s;
+    background-color: white; /* Green */
+    color:black;
+    }
+
+#myDist{
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    background-color:white;
+    outline-style: solid;
+    outline-color: black;
+}

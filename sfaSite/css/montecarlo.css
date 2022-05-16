@@ -1,0 +1,242 @@
+body{
+    background-color:#ff99cc;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 240px;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+    }
+
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 8px;
+    width: 80px;
+    height: 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    }
+    
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+#darts{
+    margin-top: 20px;
+    background-color:green;
+    position: relative;
+    height: 460px;
+    width: 820px;
+    /* padding: 20px; */
+}
+
+#dartsInfo{
+    position: absolute;
+    height: 400px;
+    width: 320px;
+    /* padding:30px; */
+    background-color:blue;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 3px;
+    color: coral;
+    left: 464px;
+    top: 31px;
+}
+
+#DBTitle{
+    position: absolute;
+    left: 40px;
+}
+
+
+#dartsText{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+#numDarts{
+    position: absolute;
+    bottom: 165px;
+    left: 40px;
+}
+
+#dartSpeed{
+    position: absolute;
+    bottom: 95px;
+    left: 40px;
+}
+
+#runDarts{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 240px;
+}
+
+#dartsCanvas{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    height:400px;
+    background-color:white;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 2px;
+}
+
+#needles{
+    margin-top: 20px;
+    background-color:green;
+    position: relative;
+    height: 460px;
+    width: 820px;
+    /* padding: 20px; */
+}
+
+#needlesInfo{
+    position: absolute;
+    height: 400px;
+    width: 320px;
+    /* padding:30px; */
+    background-color:blue;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 3px;
+    color: coral;
+    left: 464px;
+    top: 30px;
+}
+
+#needlesTitle{
+    position: absolute;
+    left: 40px;
+}
+
+#needlesText{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+#numNeedles{
+    position: absolute;
+    bottom: 165px;
+    left: 40px;
+}
+
+#needleSpeed{
+    position: absolute;
+    bottom: 95px;
+    left: 40px;
+}
+
+#runNeedles{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 240px;
+}
+
+#needlesCanvas{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    height:400px;
+    background-color:white;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 3px;
+}
+
+#eList{
+    margin-top: 20px;
+    background-color:green;
+    position: relative;
+    height: 460px;
+    width: 820px;
+    /* padding: 20px; */
+}
+
+#eListInfo{
+    position: absolute;
+    height: 400px;
+    width: 320px;
+    /* padding:30px; */
+    background-color:blue;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 3px;
+    color: coral;
+    left: 464px;
+    top: 30px;
+}
+
+#ELTitle{
+    position: absolute;
+    left: 40px;
+}
+
+#eListText{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+#numE{
+    position: absolute;
+    bottom: 165px;
+    left: 40px;
+}
+
+#eSpeed{
+    position: absolute;
+    bottom: 95px;
+    left: 40px;
+}
+
+#runEList{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 240px;
+}
+
+#eCanvas{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    height:400px;
+    background-color:white;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 3px;
+}
+
+#radians{
+    padding: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+}

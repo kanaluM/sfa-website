@@ -1,0 +1,88 @@
+body{
+    background-color:#ff99cc;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 160px;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+    }
+
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 8px;
+    width: 80px;
+    height: 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    }
+    
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+#activity{
+    position: absolute;
+    padding: 20px;
+    background-color: blue;
+    width: 800px;
+    height: 425px;
+}
+
+#radians{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+    width: 400px;
+}
+
+#controls{
+    padding: 20px;
+    width: 280px;
+    background-color: green;
+    outline-style: solid;
+    outline-color: black;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    height: 300px;
+}
+
+#angleText{
+    position: absolute;
+    top: 50px;
+}
+
+#angle{
+    position: absolute;
+    top: 180px;
+    width: 200px;
+}
+
+#startWalk{
+    position: absolute;
+    width: 200px;
+    top: 230px;
+}

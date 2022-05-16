@@ -1,0 +1,112 @@
+body{
+    /* height: 100%; 
+    width: 100%;  */
+    background-color:#99ebff;
+    padding: 50px;
+}
+
+#title{
+    text-align: center;
+    font-size: 50px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 4px solid #ccc;
+    float: left;
+    /* width: 180px;
+    height: 270px; */
+}
+  
+div.gallery:hover {
+    border: 4px solid #777;
+}
+
+div.gallery img {
+    /* width: 100%;
+    height: auto; */
+    height: 200px;
+    width: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.subhead{
+    /* margin: 50px; */
+    clear: both;
+    display: block; 
+    position: relative; 
+    text-align: center;
+}
+
+.subheadT{
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+/* #papers{
+    margin: 50px;
+    clear: both;
+    display: block; 
+    position: relative; 
+    text-align: center;
+}
+
+#bigProjects{
+    margin: 50px;
+    clear: both;
+    display: block; 
+    position: relative; 
+    text-align: center;
+}
+
+#smallProjects{
+    margin: 50px;
+    clear: both;
+    display: block; 
+    position: relative; 
+    text-align: center;
+} */
+
+/* 
+body{
+    height: 100%; 
+    width: 100%; 
+}
+
+#title{
+    color:coral;
+    font-family: "papyrus";
+    background-color:#34568B;
+    width: 80vw;
+    text-align: center;
+    margin-top: 8vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#links{
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-template-rows: 7vh 7vh 7vh 7vh;
+    grid-row-gap: 10px;
+
+}
+
+.link{
+    text-align:center;
+    color:coral;
+    padding: 10px;
+    background-color: #34568B;
+    border-radius: 15px;
+} 
+*/

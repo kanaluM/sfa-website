@@ -1,0 +1,28 @@
+body{
+    background-color:#ff99cc;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 8px;
+    width: 80px;
+    height: 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    }
+
+#canvas{
+    border:1px solid #000000;
+    background-color:#99ccff;
+    }
+
+#canvas2{
+    border:1px solid #000000;
+    background-color:#99ccff;
+    }

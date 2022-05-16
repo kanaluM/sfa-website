@@ -1,0 +1,89 @@
+body{
+    background-color:#ff99cc;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 8px;
+    width: 80px;
+    height: 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    }
+
+.button:hover {
+    transition-duration: 0.4s;
+    background-color: white; /* Green */
+    color:black;
+    }
+
+#main{
+    background-color: blue;
+    position: relative;
+    height: 400px;
+    width: 685px;
+    padding: 20px;
+}
+
+#svg{
+    background-color:white;
+    width: 400px;
+    outline-style: solid;
+    outline-color: black;
+}
+
+#call{
+    width: 259px;
+    height: 50px;
+    position: absolute;
+    top: 17px;
+    left: 440px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+#add{
+    position: absolute;
+    left: 440px;
+    top: 90px;
+}
+
+#undo{
+    position: absolute;
+    left: 533px;
+    top: 90px;
+}
+
+#clear{
+    position: absolute;
+    left: 626px;
+    top: 90px;
+}
+
+#mainText{
+    padding: 10px;
+    width: 245px;
+    height: 250px;
+    outline-style: solid;
+    outline-color: black;
+    background-color: red;
+    position: absolute;
+    top: 150px;
+    left: 440px;
+}
+
+#error{
+    position: absolute;
+    top: 0px;
+}
+
+
+
+

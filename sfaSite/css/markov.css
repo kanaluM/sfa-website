@@ -1,0 +1,57 @@
+body{
+    height: 100%; 
+    width: 100%; 
+    /* overflow: hidden;  */
+    margin: 20;
+    margin-left:20px;
+    /* background: url("kanto.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+body::after {
+    content: "";
+    background: url("../img/dictionary.jpg");
+    opacity: 0.5;
+    background-size: 1500px 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;   
+}
+
+h1{font-family: "papyrus";
+    color:coral;
+    padding: 10px;
+    background-color: #34568B;
+    border-radius: 15px;
+    width: 65%; 
+}
+
+#instructions{font-family: "papyrus";
+    color:coral;
+    width: 65%; 
+    padding: 10px;
+    background-color: #34568B;
+    border-radius: 15px;
+}
+
+#generatedText{
+    font-family: "papyrus";
+    color:coral;
+    width: 65%; 
+    padding: 10px;
+    background-color: #34568B;
+    border-radius: 15px;
+}
+
+#buttIn{font-family: "papyrus";
+    color:coral;
+    width: 65%; 
+    padding: 10px;
+    background-color: #34568B;
+    border-radius: 15px;
+}

@@ -1,0 +1,66 @@
+body{
+    padding: 50px;
+}
+
+#bugslide{
+    /* display: block; */
+    /*min and max changes size of slider?*/
+    /* height: 320px; */
+    min-width: 260px;
+    max-width: 720px;
+    /* margin: auto;
+    margin-top: 20px;
+    position: relative; */
+} 
+
+.gallery {
+    margin: 10px;
+    border: 4px solid #ccc;
+    /* float: left; */
+    display: inline-block;
+    height: 550px;
+    vertical-align:top;
+    padding: 20px;
+}
+
+#svgWally{
+    padding: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+}
+
+#svgBunny{
+    padding: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+}
+
+#svgTJ{
+    padding: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+}
+
+#svgChespin{
+    padding: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+}
+
+#svgBatman{
+    padding: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+}
+
+#svgSnoop{
+    padding: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+}

@@ -1,0 +1,140 @@
+body{
+    height: 100%; 
+    width: 100%; 
+    /* overflow: hidden;  */
+    margin: 20;
+    margin-left:20px;
+    /* background: url("kanto.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+body::after {
+    content: "";
+    background: url("../img/kanto.jpg");
+    opacity: 0.3;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;   
+  }
+
+#poke-main{
+    margin-left:20px;
+    width: 65%; 
+}
+
+#logo{width:300px;
+    margin-top:20px;
+}
+
+#instructions{font-family: "papyrus";
+    color:coral;
+    width: 65%; 
+    padding: 10px;
+    background-color: #34568B;
+    border-radius: 15px;
+}
+
+#langText{font-family: "papyrus";
+    color:coral;
+    width: 65%; 
+    padding: 10px;
+    background-color: #34568B;
+    border-radius: 15px;
+}
+
+#buttIn{font-family: "papyrus";
+    color:coral;
+    width: 65%; 
+    padding: 10px;
+    background-color: #34568B;
+    border-radius: 15px;
+}
+
+#buttIn{font-family: "papyrus";
+    color:coral;
+    width: 65%; 
+    padding: 10px;
+    background-color: #34568B;
+    border-radius: 15px;
+}
+
+#pokedex{
+    font-family: "papyrus";
+    color:coral; 
+    padding: 10px;
+    background-color: #34568B;
+    border-radius: 15px;
+    width: 65%;
+}
+
+/* #jp{font-family: "papyrus";
+    margin-left:20px;
+    color:coral;
+    width: 65%; 
+}
+
+#pokedexJP{
+    padding: 10px;
+    background-color: #34568B;
+    border-radius: 15px;
+} */
+
+#pokedexPic {
+    position: absolute;
+    right: 1vh;
+    top: 5vh;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+}
+
+#pokedexPic img {
+    vertical-align: top;
+    width: 70%
+}
+
+#pokedexPic figcaption {
+    text-align: center;
+    display: inline-block;
+    caption-side: bottom;
+    width: 70%;
+    font-size: smaller;
+    font-family: "papyrus";
+    color:coral;
+    background-color: #34568B;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+#pikachuPic {
+    position: absolute;
+    right: 1vh;
+    bottom: 5vh;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+}
+
+#pikachuPic img {
+    vertical-align: top;
+    width: 70%
+}
+
+#pikachuPic figcaption {
+    text-align: center;
+    display: inline-block;
+    caption-side: bottom;
+    width: 70%;
+    font-size: smaller;
+    font-family: "papyrus";
+    color:coral;
+    background-color: #34568B;
+    padding: 2px;
+    border-radius: 10px;
+}

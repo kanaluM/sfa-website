@@ -1,0 +1,317 @@
+body{
+    background-color:#ff99cc;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+    }
+
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 8px;
+    width: 80px;
+    height: 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    }
+    
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+#header{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width:700px;
+}
+
+#svg{
+    font: italic 80px serif; 
+    fill: green;
+    height: 20vh;
+}
+
+#musicButton{
+    position: absolute;
+    top: 33px;
+    right: 151px;
+    width: 20px;
+    height: 20px;
+    opacity:0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+
+#musicButton:hover {
+    transition-duration: 0.4s;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    opacity:1;
+    }
+
+#simple{
+    margin-top: 20px;
+    background-color:green;
+    position: relative;
+    height: 280px;
+    width: 920px;
+    padding: 20px;
+}
+
+#simpleControls{
+    position: absolute;
+    height: 220px;
+    width: 320px;
+    padding:30px;
+    background-color:blue;
+    outline-style: solid;
+    outline-color: black;
+    color: coral;
+    left: 560px;
+    top: 20px;
+}
+
+#controlsTextS{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+#gR{
+    position: absolute;
+    top: 220px;
+    width: 350px;
+}
+
+#gRText{
+    position: absolute;
+    top: 10px;
+    width: 350px;
+}
+
+#dR{
+    position: absolute;
+    top: 160px;
+    width: 350px;
+}
+
+#dRText{
+    position: absolute;
+    top: 10px;
+    width: 350px;
+}
+
+#simpleButton{
+    position: absolute;
+    width: 100px;
+    height:100px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    right: 30px;
+    top: 30px;
+    }
+
+#simpleButton:hover {
+    transition-duration: 0.4s;
+    background-color: white; /* Green */
+    color:black;
+    }
+
+#graph1{
+    background-color:#a0a69a;
+    padding: 10px;
+    width: 500px;
+    outline-style: solid;
+    outline-color: black;
+}
+
+#complex{
+    background-color:green;
+    position: relative;
+    height: 580px;
+    width: 1270px;
+    padding: 20px;
+}
+
+#graph2{
+    background-color:#a0a69a;
+    padding: 10px;
+    width: 500px;
+    outline-style: solid;
+    outline-color: black;
+}
+
+#graph3{
+    position: absolute;
+    top: 320px;
+    background-color:#a0a69a;
+    padding: 10px;
+    width: 500px;
+    outline-style: solid;
+    outline-color: black;
+}
+
+#controls{
+    position: absolute;
+    height: 524px;
+    width: 210px;
+    padding: 30px;
+    background-color:blue;
+    outline-style: solid;
+    outline-color: black;
+    color: coral;
+    left: 560px;
+    top: 20px;
+}
+
+/* #controlsText{
+    position: absolute;
+    top: 0;
+    padding:3px;
+    left: 40px;
+} */
+
+/* #ABC{
+    position: absolute;
+    top: 185px;
+    width: 220px;
+}
+
+#AWC{
+    position: absolute;
+    top: 250px;
+    width: 220px;
+}
+
+#DRC{
+    position: absolute;
+    top: 315px;
+    width: 220px;
+}
+
+#OTC{
+    position: absolute;
+    top: 380px;
+    width: 220px;
+}
+
+#RTC{
+    position: absolute;
+    top: 445px;
+    width: 220px;
+} */
+
+.sText{
+    margin-top: 5px;
+}
+
+#complexButton{
+    position: absolute;
+    width: 90px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    left: 20px;
+    bottom: 20px;
+    }
+
+#plagueButton{
+    position: absolute;
+    width: 90px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    bottom: 20px;
+    right: 20px;
+    }
+
+#complexButton:hover {
+    transition-duration: 0.4s;
+    background-color: white; /* Green */
+    color:black;
+    }
+
+#plagueButton:hover {
+    transition-duration: 0.4s;
+    background-color: white; /* Green */
+    color:black;
+    }
+
+#canvas{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    width:400px;
+    background-color:#c1fa05;
+    padding: 10px;
+    outline-style: solid;
+    outline-color: black;
+}
+
+#sim{
+    margin-top: 20px;
+    background-color:green;
+    position: relative;
+    height: 420px;
+    width: 920px;
+    padding: 20px;
+}
+
+#simText{
+    position: absolute;
+    height: 80px;
+    width: 362px;
+    right: 30px;
+    bottom: 16px;
+    padding: 30px;
+    outline-style: solid;
+    outline-color: black;
+    color: coral;
+    background-color: blue;
+}
+
+#testCanvas{
+    position: absolute;
+    top: 10px;
+}
+
+#runSim{
+    position: absolute;
+    right: 20px;
+    width: 60px;
+    height: 100px;
+    bottom: 20px;
+    color: white;
+}
+
+#runSim:hover {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    }

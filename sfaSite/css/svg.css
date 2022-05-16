@@ -1,0 +1,132 @@
+body{
+    background-color:#ff99cc;
+}
+
+#title{
+    color:#990099;
+    background-color:white;
+    text-align: center;
+    margin-top: 8vh;
+    padding: 15px 20px;
+}
+
+#stuffAtTop{
+    margin-left:20px;
+    }
+
+#graph{
+    position: absolute;
+    padding: 20px;
+    background-color: red;
+    width:800px;
+    margin-right:4vw;
+    display: inline-grid;
+}
+
+#parameters{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 300px;;
+}
+
+#svg{
+    width: 400px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+    background-color: #666699;
+}
+
+#controls{
+    position: absolute;
+    width: 300px;
+    bottom: 20px;
+    right: 50px;
+    text-align: center;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+}
+
+.button{
+    background-color: red;
+    border: none;
+    border-radius: 8px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    color: white;
+    }
+
+.button:hover {
+    transition-duration: 0.4s;
+    background-color: white;
+    color:black;
+    }
+
+#up{
+    position: absolute;
+    top: 10px;
+    left: 25%;
+}
+
+#left{
+    position: absolute;
+    top: 60px;
+    left: 10%;
+}
+
+#right{
+    position: absolute;
+    top: 60px;
+    left: 40%;
+}
+
+#down{
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+}
+
+#point{
+    position: absolute;
+    top: 30px;
+    right: 10%;
+}
+
+#flip{
+    position: absolute;
+    bottom: 30px;
+    right: 10%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+    }
+    
+.slider::-moz-range-thumb {
+width: 25px;
+height: 25px;
+background: #04AA6D;
+cursor: pointer;
+}

@@ -1,0 +1,161 @@
+body{
+    background-color:#ff99cc;
+}
+
+#title{
+    color:#990099;
+    background-color:white;
+    text-align: center;
+    margin-top: 8vh;
+    padding: 15px 20px;
+}
+
+#stuffAtTop{
+    margin-left:20px;
+    }
+
+#graph{
+    display: inline-block;
+    margin-right: 1vw;
+    width:50%;
+    }
+
+#svg{
+    width: 400px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+    background-color:white;
+    }
+
+#pathlength{
+    display:block;
+    }
+
+#parameters{
+    margin-left:20px;
+    margin-right:5vw;
+    float:left;
+    }
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+    }
+    
+.slider::-moz-range-thumb {
+width: 25px;
+height: 25px;
+background: #04AA6D;
+cursor: pointer;
+}
+
+#icons{
+    text-align: center;
+}
+
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 8px;
+    width: 80px;
+    height: 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    }
+
+#circleButton{
+    background-color: #4CAF50; /* Green */
+    color: white;
+    margin-right:20px;
+    }
+
+#circleButton:hover {
+    transition-duration: 0.4s;
+    background-color: white; /* Green */
+    color:black;
+    }
+
+#chespinButton{
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#chespinButton:hover {
+    transition-duration: 0.4s;
+    background-color: white; /* Green */
+    color:black;
+    }
+
+#wallyButton{
+    background-color: #4CAF50; /* Green */
+    color: white;
+    margin-right:20px;
+    }
+
+#wallyButton:hover {
+    transition-duration: 0.4s;
+    background-color: white; /* Green */
+    color:black;
+    }
+
+#alienButton{
+    background-color: #4CAF50; /* Green */
+    color: white;
+    }
+
+#alienButton:hover {
+    transition-duration: 0.4s;
+    background-color: white; /* Green */
+    color:black;
+    }
+
+#startWalk{
+    background-color: red;
+    border: none;
+    color:white;
+    border-radius: 8px;
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    }
+
+#startWalk:hover {
+    transition-duration: 0.4s;
+    background-color: white; /* Green */
+    color:black;
+    }
+
+#doddsButton{
+    position: absolute;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    right: 3vw;
+    opacity:0;
+    }
+
+#doddsButton:hover {
+    transition-duration: 0.4s;
+    background-color: white; /* Green */
+    color:black;
+    opacity:1;
+    }
