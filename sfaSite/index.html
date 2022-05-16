@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scripting For All '21</title>
+    <link rel = "stylesheet" href = "index.css">
+    <link rel="icon" href = "img/wally.png">
+    <base href="https://myappkanalu.firebaseapp.com/">
+</head>
+
+<body id="body" onload="load()">
+
+<h1 id="title">Scripting For All</h1>
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'about')">About</button>
+    <button class="tablinks" onclick="openCity(event, 'papers')">Papers</button>
+    <button class="tablinks" onclick="openCity(event, 'bigProjects')">Big Projects</button>
+    <button class="tablinks" onclick="openCity(event, 'smallProjects')">Small Projects</button>
+</div>
+
+<div class="subhead" id="about">
+    <h2 class="subheadT">An Opportunity and Challenge</h2>
+
+    <p>Funded by the National Science Foundation<br>
+        CS for ALL (Scripting for All):  NSF award # 1612451
+    </p>
+    
+    <a id="link" href="https://www.cs.hmc.edu/~dodds/cs35/nsf.html"><span>SFA site
+    </span></a>
+    
+    <p id="aboutSFA" style="text-align:left;">
+    Computing has long been a valuable specialty. Increasingly,
+    computational skillsets, toolsets, and mindsets are
+    being considered a cornerstone of professional literacy,
+    akin to cogent writing, critical reading, and compelling
+    presentation. (Even if not quite as universal!)<br><br>
+    CS departments evolved to 
+    convey the valuable specialty of CS. Institutional
+    structures for developing the professional literacy of
+    computing, however, are far less mature. This NSF
+    project, <i>Computing for Insight</i> or <i>CFI</i> 
+    (also nicknamed "Scripting
+    for All") explores how post-secondary paths
+    can most effectively 
+    help all students -- especially non-CS
+    majors -- gain confidence and comfort with the 
+    literacy of computing.<br><br>
+    Thus far, the most important insights gained have been
+    <ul style="text-align:left;">
+        <li> In no way do Literature departments own
+        writing. By the same token, in no way do CS departments own
+        computing. This latter truth is less widely acknowledged.
+        Embracing it, it becomes clear that 
+        computing does not, per se, threaten any academic identity
+        -- at least no more than writing (or reading or presentation) does.
+        </li>
+        <li> Literacies are most effectively developed <i>within
+        another academic identity</i>. To that end, CFI has sought
+        to create curricula <i><b>outside of CS</b></i> in which to
+        develop computing skills. The sciences have been the natural
+        -
+        and successful start. In summer 2019 we are creating
+        material that seeks to reach beyond the natural and physical
+        sciences -- without neglecting those close allies!
+        </li>
+        <li> Although CS does not own computing, and computing
+        (while useful) isn't central in non-CS disciplines, it is
+        also the case that CS departments have the chance to team up
+        with their academic siblings in order to serve students --
+        of all interests and identities -- who would like to embrace
+        or experiment with computing skills. 
+        CFI sees such efforts as "bridge building" from and to CS
+        and other disciplines, such that students have a variety of
+        paths for developing computing confidence that will serve
+        them in the academic identities they have chosen. 
+        </li>
+        <li> We believe that an important part of this
+        bridge-building is expanding the set of computing courses
+        designed for non-CS majors. HMC's <i>CS35</i>, CS for
+        Insight, is an example of such a course. Similarly,
+        <i>CS5</i>, especially its <i>Green</i> section (using only
+        biological contexts to convey computing ideas) fits this
+        description. CFI experiments with and examines the results
+        of these efforts.
+        </li>
+    </ul>
+    </p>
+
+    <h2 class="subheadT">About Us</h2>
+    <div class="gallery">
+        <!-- <img src="" alt="Prof Dodds' Alter Ego"> -->
+        <p class="bio">
+            Prof Dodds<br><br>
+            Class: Unknown<br><br>
+            Major: Unknown<br><br>
+            Accomplishments: Teaching CS5<br><br>
+        </p>
+    </div>
+    <div class="gallery">
+        <!-- <img src="" alt="Lilly's Alter Ego"> -->
+        <p class="bio">
+            Lilly Lee<br><br>
+            Class: 2024<br><br>
+            Major: Computer Science<br><br>
+            Projects: Coding With Wally, Slicer,<br> CS tutorials<br><br>
+            Accomplishments: Can do a cartwheel<br><br>
+        </p>
+    </div>
+    <div class="gallery">
+        <!-- <img src="" alt="Arianna's Alter Ego"> -->
+        <p class="bio">
+            Arianna Meinking<br><br>
+            Class: 2024<br><br>
+            Major: Physics/CS (IPS?!)<br><br>
+            Projects: CS5 cards, Particle physics,<br> CS tutorials, CS35 revisions<br><br>
+        </p>
+    </div>
+    <div class="gallery">
+        <!-- <img src="img/greninja.jpg" alt="Kanalu's Alter Ego"> -->
+        <p class="bio">
+            Kanalu Monaco<br><br>
+            Class: 2024<br><br>
+            Major: Math/CS<br><br>
+            Projects: Random assortment of web pages,<br> jupyter notebooks, and CS35 revisions<br><br>
+            Accomplishments: Is Javascript<br> an accomplishment?<br><br>
+            <!-- <a id="link" href="html/pokecards.html"><span>POKEMON
+            </span></a> -->
+        </p>
+    </div>
+    <div class="gallery">
+        <!-- <img src="" alt="Hallie's Alter Ego"> -->
+        <p class="bio">
+            Hallie Seay<br><br>
+            Class: 2023<br><br>
+            Major: Computer Science<br><br>
+            Accomplishments: Assembly editor, <br>CS5 Mastery Milestones<br><br>
+        </p>
+    </div>
+</div>
+
+<div class="subhead" id="papers">
+    <h2 class="subheadT">Our Papers</h2>
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/curriculumP.png">
+          <img src="thumbnails/curriculumP.png" alt="Paper 1 Image">
+        </a>
+        <div class="desc">
+            <a id="link" href="https://www.cs.hmc.edu/~zdodds/lee_seay_dodds.pdf"><span>Supporting Scripting for All
+            </span></a>
+        </div>
+    </div>
+    
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/crossP.png">
+          <img src="thumbnails/crossP.png" alt="Paper 2 Image">
+        </a>
+        <div class="desc">
+            <a href="https://www.cs.hmc.edu/~zdodds/meinking_monaco_dodds.pdf"><span>Inter-Disciplinary Computing
+            </span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/bioPaper.png">
+          <img src="thumbnails/bioPaper.png" alt="Paper 3 Image">
+        </a>
+        <div class="desc">
+            <a href="https://www.cs.hmc.edu/~dodds/cs35/SIGCSE_2021_final_submission.pdf"><span>CS5 Green
+            </span></a>
+        </div>
+    </div>
+</div>
+
+<div class="subhead" id="bigProjects">
+    <h2 class="subheadT">Our Big Projects</h2>
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/cww.png">
+        <img src="thumbnails/cww.png" alt="Coding With Wally Image">
+        </a>
+        <div class="desc">
+            <a href="http://codingwithwally.pythonanywhere.com/login"><span>Coding With Wally</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/cards.png">
+        <img src="thumbnails/cards.png" alt="CS5 Cards Image">
+        </a>
+        <div class="desc">
+            <a href="html/cards.html"><span>CS5 Cards</span></a>
+        </div>
+    </div>
+    
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/cwh.png">
+        <img src="thumbnails/cwh.png" alt="HMMM With Wally Image">
+        </a>
+        <div class="desc">
+            <a href="http://writehmmm-hmccsstudio.pythonanywhere.com/"><span>HMMM With Wally</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="subhead" id="smallProjects">
+    <h2 class="subheadT">Our Small Projects</h2>
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/rw2.png">
+        <img src="thumbnails/rw2.png" alt="Random Walks 2D Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/walk.html"><span>Random Walks 2D</span></a>
+        </div>
+    </div>
+    
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/dw.png">
+        <img src="thumbnails/dw.png" alt="Daisy World Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/daisyworld.html"><span>Daisy World</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/tanks.png">
+        <img src="thumbnails/tanks.png" alt="German Tanks Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/tank.html"><span>German Tanks</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/specrel.png">
+        <img src="thumbnails/specrel.png" alt="Special Relativity Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/physics.html"><span>Special Relativity</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img/cbumpd.png">
+        <img src="img/cbumpd.png" alt="Particle Collisions Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/particlecollisions.html"><span>Particle Collisions</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/slice.png">
+            <img src="thumbnails/slice.png" alt="Slicing Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="http://slicer-hmccsstudio.pythonanywhere.com/typeIndex"><span>Slicer</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/Lllustrator.png">
+        <img src="thumbnails/Lllustrator.png" alt="Lllustrator Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/Lllustrator.html"><span>The L-llustrator</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/pokedex.png">
+        <img src="thumbnails/pokedex.png" alt="Pokedex Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/pokedex.html"><span>Pokedex</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/crypto.png">
+        <img src="thumbnails/crypto.png" alt="Cryptography Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/rsa.html"><span>Cryptography</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/markov.png">
+        <img src="thumbnails/markov.png" alt="Markov Text Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/markov.html"><span>Markov Text</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/parabola.png">
+        <img src="thumbnails/parabola.png" alt="Parabola Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/svg.html"><span>Parabola</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/ellipse.png">
+        <img src="thumbnails/ellipse.png" alt="Ellipse Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/ellipse.html"><span>Ellipse</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/animation.png">
+        <img src="thumbnails/animation.png" alt="Animation Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/old.html"><span>"Animation"</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/game.png">
+        <img src="thumbnails/game.png" alt="Game Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/game_test.html"><span>Math Game</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/mc.png">
+        <img src="thumbnails/mc.png" alt="Monte Carlo Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/montecarlo.html"><span>Monte Carlo Simulations</span></a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="thumbnails/circle.png">
+        <img src="thumbnails/circle.png" alt="Circle Image">
+        </a>
+        <div class="desc">
+            <a class="link" href="html/circle.html"><span>Circle</span></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openCity(evt, suitName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="subhead" and hide them
+    tabcontent = document.getElementsByClassName("subhead");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(suitName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+</script>
+
+<script>
+    function load(){
+        document.getElementById("about").style.display = "block";
+        tablinks = document.getElementsByClassName("tablinks");
+        tablinks[0].className = tablinks[0].className + " active";}
+</script>
+
+</body>
+</html>
