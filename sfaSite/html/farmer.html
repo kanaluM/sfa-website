@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MyApp</title>
+    <link rel="icon" href="pikachu.png">
+    <script src = "farmer.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel = "stylesheet" href = "farmer.css">
+</head>
+
+<body id="body">
+    <h1>Farming</h1>
+    <a id="farmer-main" href="index.html">Click HERE to return to the main page</a>
+    <p>Suppose you are a farmer that raises cows. You recently gained many new baby calves, but there is not enough room for all of them, so you decide to build a new rectangular pen. However, you are on a tight budget: you only have enough money to afford 1000 meters of fencing... </p>
+
+    <p>Scenario 1: Suppose you want to build a \(4 \times 5\) pen for your 20 new calves. What dimensions of the pen will maximize the area for each individual cow?</p>
+
+    <svg id="svg" width = 400 viewbox="0 0 400 400">
+        <g id="grid">
+            <path id = "vGrid" stroke="#000" stroke-width="0.3" fill="none" opacity=0.6 d="M 50 -50 V 450 M 100 -50 V 450 M 150 -50 V 450 M 200 -50 V 450 M 250 -50 V 450 M 300 -50 V 450 M 350 -50 V 450"/>
+            <path id = "hGrid" stroke="#000" stroke-width="0.3" fill="none" opacity=0.6 d="M -50 50 H 450 M -50 100 H 450 M -50 150 H 450 M -50 200 H 450 M -50 250 H 450 M -50 300 H 450 M -50 350 H 450"/>
+        Sorry, your browser does not support inline SVG.
+    </svg>
+</body>
+</html>

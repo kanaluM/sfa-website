@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MyApp</title>
+    <script src = "../js/game_test.js" defer></script>
+    <link rel = "stylesheet" href = "../css/game_test.css">
+    <link rel="icon" href="../img/pikachu.png">
+</head>
+
+<body>
+
+<audio id="backgroundMusic" src="../webmusic/plasma.mp3" type="audio/mpeg" loop="true" preload="auto" controls="none" style="display:none"></audio>
+<audio id="scoreSound" src="../webmusic/coin.mp3" type="audio/mpeg" preload="auto" controls="none" style="display:none"></audio>
+
+<div id="stuffAtTop">
+    <h1>Cool Math Games</h1>
+    <a id="gameBeta-main" href="/index.html">Click HERE to return to the main page</a>
+    <p id="test">Welcome to beta testing</p>
+    <p id="coords">Testing testing 1 2 3</p>
+</div>
+
+<canvas id="canvas" width="600" height="200" style="border:1px solid #000000;">
+</canvas>
+
+<div id="controls">
+    <button class="button" id="up">up</button>
+    <button class="button" id="down">down</button>
+    <button class="button" id="parabola">parabola</button>
+    <button class="button" id="e">e</button>
+    <button class="button" id="sin">sin</button>
+    <button class="button" id="log">log</button>
+    <div id="info">
+        <p id="scoreT">Score: <span id="score">0</span></p>
+        <p id="pathT">Path: <span id="path">?</span></p>
+        <button class="button" id="startGame">START</button>
+        <button class="button" id="endGame">END</button>
+    </div>
+</div>
+
+<div id="music">
+<input id="backgroundMusicVolume" class="slider" type="range" min="0" max="100" value="20" class="slider">
+<p id="backgroundMusicVolumeText">Music at 20%</p>
+<button class="button" id="changeTrack">WOW</button>
+<p id="currentTrack">Now Playing "Plasma Battle Theme"</p>
+</div>
+<button class="button" id="testB">YEET</button>
+<div id="draw">
+    <canvas id="canvasTest1" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <canvas id="canvasTest2" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <canvas id="canvasTest3" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <canvas id="canvasTest4" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <canvas id="canvasTest5" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <canvas id="canvasTest6" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <canvas id="canvasTest7" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <canvas id="canvasTest8" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <canvas id="canvasTest9" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <canvas id="canvasTest10" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+</div>
+
+<!-- <br><br>
+<div id="g4">
+    <canvas id="canvas4" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <br>
+    <br>
+    <button class="button" id="testB4">LOGX</button>
+</div>
+
+<br><br>
+<div id="g3">
+    <canvas id="canvas3" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <br>
+    <br>
+    <button class="button" id="testB3">SINX</button>
+</div>
+
+<br><br>
+<div id="g2">
+    <canvas id="canvas2" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <br>
+    <br>
+    <button class="button" id="testB2">E^X</button>
+</div>
+
+<br><br>
+<div id="g1">
+    <canvas id="canvas1" width="500" height="200" style="border:1px solid #000000;">
+    </canvas>
+    <br>
+    <br>
+    <button class="button" id="testB1">X^2</button>
+</div> -->
+</body>
+</html>
+

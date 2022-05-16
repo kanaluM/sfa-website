@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyApp</title>
+    <link rel="icon" href="../img/pikachu.png">
+    <script src = "../js/Lllustrator.js" defer></script>
+    <link rel = "stylesheet" href = "../css/Lllustrator.css">
+</head>
+
+<body id="body">
+    <h1>Lllustrator</h1>
+    <a id="L-main" href="/index.html">Click HERE to return to the main page</a>
+    <p>Welcome to the Lllustrator! The Lllustrator is a way to practice calling functions in Python (in fact, this website does not use Python, but that's okay!). Input a function call in the cell below and see what it does! If you are looking for ideas, try running the calls listed below (one at a time please!)</p>
+
+
+    <p id="try1">L(True, -4, 4, 8, 8, "red")<br>
+        L(False, -3, 3, 7, 7, "orange")<br>
+        L(True, -3, 3, 6, 6, "yellow")<br>
+        L(False, -2, 2, 5, 5, "green")<br>
+        L(True, -2, 2, 4, 4, "blue")<br>
+        L(False, -1, 1, 3, 3, "purple")<br>
+        L(True, -1, 1, 2, 2, "red")<br>
+        L(False, -0, 0, 1, 1, "orange")<br></p>
+    <div id="main">
+        <svg id="svg" viewBox="0 0 400 400">
+            <path id="vGrid" stroke="black" fill="none" opacity="0.2" d="M 40 -15 V 415 M 80 -15 V 415 M 120 -15 V 415 M 160 -15 V 415 M 200 -15 V 415 M 240 -15 V 415 M 280 -15 V 415 M 320 -15 V 415 M 360 -15 V 415"></path>
+            <path id="hGrid" stroke="black" fill="none" opacity="0.2" d="M -15 40 H 415 M -15 80 H 415 M -15 120 H 415 M -15 160 H 415 M -15 200 H 415 M -15 240 H 415 M -15 280 H 415 M -15 320 H 415 M -15 360 H 415 "></path>
+        </svg>
+        <textarea id="call" type="text" placeholder="L(bool,int,int,int,int,str)"></textarea>
+        <button class="button" id="add">ADD</button>
+        <button class="button" id="undo">UNDO</button>
+        <button class="button" id="clear">CLEAR</button>
+        <div id="mainText">
+            <p id="error">Errors?</p><br>
+            <p>Previous function calls:
+                <ul id="history">
+                </ul>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

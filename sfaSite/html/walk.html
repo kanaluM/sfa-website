@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MyApp</title>
+    <script src = "../js/walk.js" defer></script>
+    <link rel = "stylesheet" href = "../css/walk.css">
+    <link rel="icon" href="../img/pikachu.png">
+</head>
+
+<body>
+<h1 id="title">Random Walks - In Two Dimensions!</h1>
+
+<button class="button" id="doddsButton">DODDS</button>
+
+<div id="stuffAtTop">
+<a id="walk-main" href="/index.html">Click HERE to return to the main page</a>
+<p id="test">Welcome to the random walk simulator! It is still a work in progress...</p>
+</div>
+<br>
+<div id="parameters">
+    <br>
+    <input id="gridSize" class="slider" type="range" min="1" max="20" value="4" class="slider">
+    <p>Running on a grid with radius <span id="gridSizeText">4</span></p>
+    <input id="speed" class="slider" type="range" min="1" max="100" value="50" class="slider">
+    <p>Running at <span id="speedText">0.50</span> seconds per step</p>
+    <div id="icons">
+        <p id="characterSelect">Choose Your Character!</p>
+        <button class="button" id="circleButton">CIRCLE</button>
+        <button class="button" id="chespinButton">CHESPIN</button><br><br>
+        <button class="button" id="wallyButton">WALLY</button>
+        <button class="button" id="alienButton">ALIEN</button><br><br>
+    </div>
+    <button id="startWalk">Go</button>
+</div>
+
+<div id="graph">
+<svg id="svg" viewbox="0 0 400 400">
+    <g id="grid">
+        <path id = "vGrid" stroke="#000" stroke-width="0.3" fill="none" opacity=0.6 d="M 50 -50 V 450 M 100 -50 V 450 M 150 -50 V 450 M 200 -50 V 450 M 250 -50 V 450 M 300 -50 V 450 M 350 -50 V 450"/>
+        <path id = "hGrid" stroke="#000" stroke-width="0.3" fill="none" opacity=0.6 d="M -50 50 H 450 M -50 100 H 450 M -50 150 H 450 M -50 200 H 450 M -50 250 H 450 M -50 300 H 450 M -50 350 H 450"/>
+    </g>
+    <path id ="walkerPath" stroke="red" stroke-width="5" fill="none" d=""/>
+
+    <g id="walkIcon">
+        <circle id="walker" cx="200" cy="200" r="5" stroke="blue"></circle>
+    </g>
+
+    <g id="animateHere">
+        <animateMotion id="walkerMove" xlink:href="#walker" dur="42s" repeatCount="1" fill="freeze" path=""></animateMotion>
+    </g>
+    Sorry, your browser does not support inline SVG.
+</svg>
+
+<p id="pathLength"></p>
+</div>
+
+<br><br><br><br>
+
+</body>
+</html>

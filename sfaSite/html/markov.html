@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MyApp</title>
+    <script src = "../js/markov.js" defer></script>
+    <link rel = "stylesheet" href = "../css/markov.css">
+    <link rel="icon" href="../img/pikachu.png">
+</head>
+
+<body id="body">
+
+<h1>Markov-Generated Text</h1>
+<a id="markov-main" href="/index.html">Click HERE to return to the main page</a>
+
+<p id="instructions">Instructions: Input lots of text to create an original markov-generated text. You can also use the button below to change between first-order and second-order text making.</p>
+
+<div>
+    <p id="buttIn">First or Second order Markov text generator: &nbsp;&nbsp;<button id="oneOrTwo">one</button></p>
+</div>
+
+<div>
+    <textarea rows="5" cols="40" id="message" type="text" placeholder="message"></textarea>
+    <button id = "submit">submit</button>
+</div>
+
+<p id="generatedText">Here is your random text: </p>
+
+</body>
+</html>

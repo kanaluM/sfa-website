@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>MyApp</title>
+<script src = "../js/tank.js" defer></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel = "stylesheet" href = "../css/tank.css">
+<link rel="icon" href="../img/pikachu.png">
+</head>
+
+<body>
+<h1 id="title">The German Tank Problem</h1>
+
+
+<div id="stuffAtTop">
+<a id="tanks-main" href="/index.html">Click HERE to return to the main page</a>
+</div>
+
+<p>"In the statistical theory of estimation, the German tank problem consists of estimating the maximum of a discrete uniform distribution from sampling without replacement. In simple terms, suppose there exists an unknown number of items which are sequentially numbered from 1 to <i>N</i>. A random sample of these items is taken and their sequence numbers observed; the problem is to estimate <i>N</i>
+from these observed numbers" - Wikipedia
+
+<br><br>
+
+The problem is motivated by problems that real statisticians faced during World War 2; The Allies wanted to estimate the amount of tanks that the Germans were producing, and they used serial numbers on captured tanks to do this.
+
+<br><br>
+<a href="https://en.wikipedia.org/wiki/German_tank_problem">German Tank Problem Wikipedia page</a><br><br>
+
+Try it out below! You can input the total number of tanks (N) and the desired sample size (K). A random sample of K integers less than N will be generated and plotted. Can you think of a good formula that uses those numbers to estimate N? 
+<!-- <br><br>
+Below, we have provided three methods for estimating the maximum number <i>N</i> based on a sample. Note that <i>m</i> is the maximum value in the sample and <i>k</i> is the sample size
+
+<ul id="threeTypes">
+    <li>Frequentist Prediction: \[ Nf \approx m + \frac{m}{k} - 1 \]</li>
+    <li>Bayesian Median: \[ Nd \approx m + \frac{m\ln{2}}{k-1} \]</li>
+    <li>Bayesian Mean: \[ Nm \approx (m-1)\frac{k-1}{k-2} - 1 \]</li>
+</ul> -->
+</p>
+
+<!-- <p>Try it HERE:</p>
+<button class="button" id="exampleButton">PRESS ME</button>
+<p id="example"></p> -->
+<div id="userInput">
+    <div id="UIdistributions"></div>
+    <div id="UIText">
+        N, the number of tanks: <input id="userInputN" type="text" placeholder="N (number of tanks)" value=1042><br><br>
+        K, the sample size: <input id="userInputK" type="text" placeholder="K (sample size)" value=7><br><br>
+        Results will be displayed here!<br>
+        PURPLE lines represent the tanks in your sample<br>
+        The GREEN line represents the total number of tanks (N)<br>
+        RED and BLUE represent the sample average and two times the sample average<br>
+        <p id="UIresultsText"></p>
+        <button class="button" id="UIbutton">RUN</button>
+        <button class="button" id="UIbutton2">SHOW AVG</button>
+    </div>
+</div>
+<br><br>
+<img width=940px src="../img/breakout.png">
+
+<h2>Aggregate Data</h2>
+<p>
+The example above will sometimes lead to good results... but sometimes it doesn't! How can we improve the estimates?<br><br>
+
+Well, we know that the total number of tanks must be at least as big as the maximum number in the sample.<br><br>
+
+We can create many random samples using any numbers less than this max value in order to generate many more estimates. We can then use these aggregated estimates to create a better estimate of the true number of tanks
+<ol>
+    <li>Randomly pick a true number of tanks</li>
+    <li>Generate an initial random sample of <i>k</i> tanks</li>
+    <li>Generate 100 random samples based on the maximum value in the initial sample</li>
+    <li>Calculate three estimates for the true number of tanks from each sample using three statistical methods</li>
+</ol>
+</p>
+
+<div id="exDist">
+    <div id="distributions"></div>
+    <div id="exText">
+        Results will be displayed here!
+        <p id="disText"></p>
+        <button class="button" id="testB">TEST</button>
+    </div>
+</div>
+
+<h2>Exploration</h2>
+<p>This problem provides a great opportunity for some user input! Below, you can write your own formula to estimate the maximum tank number!</p>
+
+<div id="buildurown">
+    <div id="byoText">
+        <p>
+            <h2>Make Your Own Function!</h2>
+            KEY:
+            <ul>
+                <li>max = maximum value in sample</li>
+                <li>min = minimum value in sample</li>
+                <li>avg = average value of sample</li>
+                <li>k = sample size</li>
+            </ul>
+        </p>
+        <textarea rows="5" cols="30" id="newFunc" type="text" placeholder="Function Here">max*(1+1/k)-1</textarea>
+        <button class="button" id="inputFB">INPUT</button>
+        <p id="myFunc">My function here</p>
+    </div>
+    <div id="myDist"></div>
+</div>
+</body>
+</html>

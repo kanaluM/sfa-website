@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MyApp</title>
+    <link rel="icon" href="../img/pikachu.png">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src = "../js/montecarlo.js" defer></script>
+    <link rel = "stylesheet" href = "../css/montecarlo.css">
+</head>
+
+<body id="body">
+    <h1>Monte Carlo</h1>
+    <a id="monteCarlo-main" href="/index.html">Click HERE to return to the main page</a>
+
+    <p id="instructions">Instructions: have fun with these Monte Carlo simulations</p>
+
+    <p id="test"></p>
+
+    <h2>Throwing Darts</h2>
+
+    <p>One way can estimate the value of \(\pi\) is by - you guessed it - using a circle! Suppose we inscribed a unit circle (radius = 1) inside a square (side length = 2). The circle would have area 
+    \[A = \pi r^2 = \pi\times 1^2 = \pi\]
+    The square would have area 
+    \[A = s^2 = 2^2 = 4\]
+    Thus the ratio of the circle's area to the square's area is \(\pi/4\). We can estimate this ratio by "throwing darts" randomly at the square. Most darts will land within the inscribed circle ("hits"), but some will land outside the circle ("misses"). We can set up an equation to solve for \(\pi\).
+    \[ \frac{\pi}{4} \approx \frac{\text{hits}}{\text{total}}\]
+    \[ \pi \approx 4\times\frac{\text{hits}}{\text{total}} \]
+    </p>
+
+    <div id="darts">
+        <div id="dartsInfo">
+        <h2 id="DBTitle">Dart Board</h2>
+        <p id="dartsText">Darts Thrown: ?<br>
+            Hit: ?<br>
+            Miss: ?<br>
+            Current PI estimate: ?</p>
+            <button class="button" id="runDarts">PRESS ME</button>
+            <div id="numDarts">
+                <input id="NDS" class="slider" type="range" min="1" max="10000" value="20" class="slider">
+                <p id="NDText">Throwing 20 darts</p>
+            </div>
+            <div id="dartSpeed">
+                <input id="DSS" class="slider" type="range" min="1" max="1000" value="500" class="slider">
+                <p id="DSText">Move slider to change speed</p>
+            </div>
+        </div>
+        <canvas id="dartsCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+    </div>
+
+    <h2>Scattering Needles</h2>
+    <p>Another way to estimate the value of \(\pi\) is by - surprisingly - using lines! Suppose we had a needle with length \(L\) on a grid with horizontal lines \(2L\) apart. <br><br>
+
+    Let \(x\) be the position of the center of the needle relative to the nearest grid line. The value of \(x\) ranges from 0 to \(L\) with uniform density. Thus the probability distribution of \(x\) is 
+    \[P_x = \frac{1}{L}\]
+
+    Let \(\theta\) be the (acute) angle the needle makes with the nearest grid line. The value of \(\theta\) ranges from 0 to \(\frac{\pi}{2}\) with uniform density Thus the probability distribution of \(\theta\) is
+    \[P_\theta=\frac{2}{\pi}\]
+
+    Because the position \(x\) and angle \(\theta\) are independent, we can multiply these probabilities together to get a combined probability distribution of 
+    \[P_{x\theta} = \frac{2}{L\pi}\]
+
+    The needle will cross a line if \(x\leq\frac{L}{2}\sin\theta\). We can use a little calculus to find the probability that this condition is true:
+    \[ \int_{\theta=0}^{\frac{\pi}{2}}\int_{x=0}^{\frac{L\sin\theta}{2}} \frac{2}{L\pi} dxd\theta\]
+
+    \[ \int_{\theta=0}^{\frac{\pi}{2}}\frac{\sin\theta}{\pi} d\theta\]
+
+    \[\frac{1}{\pi}\]
+
+    We see that the probability of a needle crossing a line is \(\frac{1}{\pi}\). We can drop many needles randomly on a grid and count the number of needles that cross a line ("crossing"). We can set up an equation to solve for \(\pi\)
+    \[ \frac{\text{crossing}}{\text{total}} \approx \frac{1}{\pi}\]
+    \[ \pi \approx  \frac{\text{total}}{\text{crossing}}\]
+    </p>
+
+    <div id="needles">
+        <div id="needlesInfo">
+        <h2 id="needlesTitle">Buffon's Needle Problem</h2>
+        <p id="needlesText">Needles Dropped: ?<br>
+            Crossing: ?<br>
+            Not Crossing: ?<br>
+            Current PI estimate: ? </p>
+            <button class="button" id="runNeedles">PRESS ME</button>
+            <div id="numNeedles">
+                <input id="NNS" class="slider" type="range" min="1" max="10000" value="20" class="slider">
+                <p id="NNText">Dropping 20 needles</p>
+            </div>
+            <div id="needleSpeed">
+                <input id="NSS" class="slider" type="range" min="1" max="1000" value="500" class="slider">
+                <p id="NSText">Move slider to change speed</p>
+            </div>
+        </div>
+        <canvas id="needlesCanvas" width="400" height="400">
+        </canvas>
+    </div>
+
+    <h2>Surprise</h2>
+
+    <!-- <p>In this simulation, we will choose a random floating-point number on the interval [0,1]. We will continue to choose numbers until their sum exceeds 1. For example, suppose we randomly chose 0.5, 0.2, 0.42. Choosing 0.42 caused the sum to exceed 1, so we stop and say that the length \(N\) of this sequence is 3. What is the average value of \(N\)?
+    <br><br>
+    First we can do a little bit of probability
+    <br><br>
+    What is the probability that \(N=k\)? Well, we know that if \(N=k\), then the sum of the first \(k-1\) numbers \((S_{k-1})\) is less than or equal to 1. Furthermore, we know that the sum of all \(k\) numbers \((S_k)\)is greater than 1. In other words,
+    \[P(N=k) = P(S_{k-1} \le 1 \text{ and } S_k > 1) \]
+
+    We can think of this in a slightly different way. There is some probability \(P(S_{k-1} \le 1)\) that the sum of the first \(k-1\) numbers is less than or equal to 1. However, there is also some probability \(P(S_k \le 1)\) that the sum of the first \(k\) numbers is less than or equal to 1. This is bad! To get the probability that the sum of the first \(k-1\) numbers <b>- and <i>only</i> the first \(k-1\) numbers -</b> does not exceed 1, we can subtract them. 
+    \[P(N=k) = P(S_{k-1} \le 1) - P(S_k \le 1) \]
+
+    But what is \(P(S_k \le 1)\)? Well, suppose that the sum of the first \(k-1\) numbers is some value \(A\). To prevent the sum from exceeding 1, the \(k\)th number must not exceed \((1-A)\).
+    <br><br>
+
+    Let's think of some more concrete examples. Let's start with \(N=1\). It is guranteed that one number cannot exceed 1, so we can say that \( P(S_1 \le 1)=1 \). Furthermore, \(P(N=1)=0\)
+    <br><br>
+
+    How about \(N=2\)? In this case, the first number is simply \(A\), and the second is at most \((1-A)\). Well, we know that the average value of a single number is 0.5. Thus, we would expect the average value of \(A\) to be 0.5. What is the probability that the second number is not greater than \((1-A)\)? It cannot exceed 0.5, and the probability of choosing such a number is 0.5! Thus we can say that \( P(S_2 \le 1)=0.5 \). Using our previous results, we can also say that 
+    \[P(N=2) = P(S_{1} \le 1) - P(S_2 \le 1) \]
+    \[P(N=2) = 1 - 0.5 \]
+    \[P(N=2) = 0.5 \]
+
+    TESTY <br><br>
+
+    How about \(N=3\)? 
+    \[P(N=3) = P(S_2 \le 1) - P(S_3 \le 1) \]
+    \[P(N=3) = 0.5 - 0.166... \]
+    \[P(N=3) = 0.333... \]
+
+    hmmm 
+
+    \[P(N=4) = P(S_3 \le 1) - P(S_4 \le 1) \]
+    \[P(N=4) = \frac{1}{6} - \frac{1}{24} \]
+    \[P(N=4) = \frac{3}{24} \]
+
+    How about \(N=k\)
+    \[P(N=k) = P(S_{k-1} \le 1) - P(S_k \le 1) \]
+
+    </p> -->
+    <p>In this simulation, we will choose a random floating-point number on the interval [0,1]. We will continue to choose numbers until their sum exceeds 1. For example, suppose we randomly chose 0.5, 0.2, 0.42. Choosing 0.42 caused the sum to exceed 1, so we stop and say that the length \(N\) of this sequence is 3. What is the average value of \(N\)? See if you can figure it out! (HINT: The solution may involve factorials and induction!)<br><br></p>
+    <div id="eList">
+        <div id="eListInfo">
+        <h2 id="ELTitle">e from Random Numbers</h2>
+        <p id="eListText">Sequences Generated: ?<br>
+            Current E estimate: ?</p>
+            <button class="button" id="runEList">PRESS ME</button>
+            <div id="numE">
+                <input id="ENS" class="slider" type="range" min="1" max="10000" value="1" class="slider">
+                <p id="ENText">Generating 20 sequences</p>
+            </div>
+            <div id="eSpeed">
+                <input id="ESS" class="slider" type="range" min="1" max="1000" value="500" class="slider">
+                <p id="ESText">Move slider to change speed</p>
+            </div>
+        </div>
+        <canvas id="eCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+    </div>
+
+    <!-- <div id="cricket">
+        <div id="cricketInfo">
+        <h2 id="CTitle">Jumping Crickets</h2>
+        <p id="cricketText">Crickets: ?<br></p>
+            <button class="button" id="runCricket">PRESS ME</button>
+            <div id="numCricket">
+                <input id="NCS" class="slider" type="range" min="1" max="10000" value="20" class="slider">
+                <p id="NCText">There are 20 crickets jumping</p>
+            </div>
+            <div id="cricketSpeed">
+                <input id="CSS" class="slider" type="range" min="1" max="1000" value="500" class="slider">
+                <p id="CSText">Move slider to change speed</p>
+            </div>
+        </div>
+        <canvas id="cricketCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+    </div> -->
+
+</body>
+</html>
